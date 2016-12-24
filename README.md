@@ -12,14 +12,15 @@ There are many reasons why one may want or need multiple applications on the sam
 - [ ] Add the ability to share components between the applications.
 - [x] Implement tree shaking.
 - [x] Implement AOT compilation.
-- [ ] Have all three applications execute in production mode without AOT.
-- [ ] Have all three applications execute in production mode with AOT.
+- [x] Have all three applications execute in production mode without AOT.
+- [x] Have all three applications execute in production mode with AOT.
 
 ### Gotchas
 
 - Angular 2, as of the writing of this readme, is not compatible with TypeScript v2.1.\*. If you try to use TypeScript v2.1.\*, the `ngfactory.ts` files will not be generated.
 - I had to add `\*\*/\*.aot.ts` to the `tsconfig.json` exclude list so the compiler does not complain about missing `.ngfactory.ts` files in the `index.aot.ts` files.
 - Remember that if we use webpack dev server to run the aot code, the aot code will not be regenerated when we make changes to the source files.
+- When loading more than one Angular application on the same page, calling `enableProdMode()` multiple times will result in an exception. Surround the function call with a try catch and ignore the error if the message is `Cannot enable prod mode after platform setup.`.
 
 ### Results
 
