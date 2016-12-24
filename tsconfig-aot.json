@@ -9,11 +9,14 @@
     "sourceMap": false,
     "noEmitHelpers": true,
     "strictNullChecks": false,
-    "baseUrl": "./submodules"
+    "baseUrl": "submodules",
+    "outDir": "aot"
   },
+  "include": [
+    "submodules/**/*.ts"
+  ],
   "exclude": [
-    "node_modules",
-    "**/*.aot.ts"
+    "node_modules"
   ],
   "compileOnSave": false,
   "buildOnSave": false,
@@ -34,5 +37,9 @@
     "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
     "placeOpenBraceOnNewLineForFunctions": false,
     "placeOpenBraceOnNewLineForControlBlocks": false
+  },
+  "angularCompilerOptions": {
+    "genDir": ".",
+    "skipMetadataEmit" : true
   }
 }

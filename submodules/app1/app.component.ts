@@ -5,5 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  public name = 'Angular App 1';
+  showHeading = true;
+  heroes = ['Magneta', 'Bombasto', 'Magma', 'Tornado'];
+
+  toggleHeading() {
+    this.showHeading = !this.showHeading;
+  }
 }

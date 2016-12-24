@@ -34,3 +34,7 @@ node_modules
 
 # Build code directories
 /dist
+/aot
+**/*.ngsummary.json
+**/*.ngfactory.ts
+**/*.ngstyle.ts

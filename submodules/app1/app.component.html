@@ -1,1 +1,5 @@
-<h1>Hello {{name}}</h1>
+<button (click)="toggleHeading()">Toggle Heading</button>
+<h1 *ngIf="showHeading">Hello Angular App 1</h1>
+
+<h3>List of Heroes</h3>
+<div *ngFor="let hero of heroes">{{hero}}</div>
