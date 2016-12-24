@@ -9,7 +9,7 @@ There are many reasons why one may want or need multiple applications on the sam
 - [x] Setup three independent applications.
 - [x] Build three independent Angular 2 applications with a basic webpack configuration.
 - [x] Load three Angular 2 applications on the same page.
-- [ ] Add the ability to share components between the applications.
+- [x] Add the ability to share components between the applications.
 - [x] Implement tree shaking.
 - [x] Implement AOT compilation.
 - [x] Have all three applications execute in production mode without AOT.
