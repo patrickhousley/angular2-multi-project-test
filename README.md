@@ -6,11 +6,11 @@ There are many reasons why one may want or need multiple applications on the sam
 
 ### What to accomplish
 
-- [ ] Setup three independent applications.
-- [ ] Build three independent Angular 2 applications with a basic webpack configuration.
-- [ ] Load three Angular 2 applications on the same page.
+- [x] Setup three independent applications.
+- [x] Build three independent Angular 2 applications with a basic webpack configuration.
+- [x] Load three Angular 2 applications on the same page.
 - [ ] Add the ability to share components between the applications.
-- [ ] Add a new webpack configuration to support tree shaking.
+- [x] Implement tree shaking.
 - [ ] Implement AOT compilation.
 - [ ] Have all three applications execute in production mode without AOT.
 - [ ] Have all three applications execute in production mode with AOT.

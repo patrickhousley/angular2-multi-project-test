@@ -9,11 +9,10 @@
     "sourceMap": false,
     "noEmitHelpers": true,
     "strictNullChecks": false,
-    "baseUrl": "."
+    "baseUrl": "./submodules"
   },
   "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
+    "node_modules"
   ],
   "compileOnSave": false,
   "buildOnSave": false,
