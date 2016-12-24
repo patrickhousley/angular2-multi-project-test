@@ -6,8 +6,9 @@
     "build:basic": "webpack --config webpack-basic.config.js --progress",
     "build:aot": "webpack --config webpack-aot.config.js --progress",
     "prebuild:aot": "ngc -p tsconfig-aot.json",
+    "build:ngtools": "webpack --config webpack-ngtools.config.js --progress",
     "start:basic": "webpack-dev-server --config webpack-basic.config.js --inline --progress",
-    "start:aot": "webpack-dev-server --config webpack-basic.config.js --inline --progress",
+    "start:aot": "webpack-dev-server --config webpack-ngtools.config.js --inline --progress",
     "prestart:aot": "ngc -p tsconfig-aot.json"
   },
   "repository": {
@@ -31,6 +32,7 @@
     "zone.js": "0.7.4"
   },
   "devDependencies": {
+    "@ngtools/webpack": "^1.2.1",
     "@types/core-js": "0.9.35",
     "@types/node": "6.0.53",
     "@types/webpack": "2.0.0",

@@ -14,6 +14,7 @@ There are many reasons why one may want or need multiple applications on the sam
 - [x] Implement AOT compilation.
 - [x] Have all three applications execute in production mode without AOT.
 - [x] Have all three applications execute in production mode with AOT.
+- [ ] Setup webpack compilation with `@ngtools/webpack` project.
 
 ### Gotchas
 
@@ -21,6 +22,7 @@ There are many reasons why one may want or need multiple applications on the sam
 - I had to add `\*\*/\*.aot.ts` to the `tsconfig.json` exclude list so the compiler does not complain about missing `.ngfactory.ts` files in the `index.aot.ts` files.
 - Remember that if we use webpack dev server to run the aot code, the aot code will not be regenerated when we make changes to the source files.
 - When loading more than one Angular application on the same page, calling `enableProdMode()` multiple times will result in an exception. Surround the function call with a try catch and ignore the error if the message is `Cannot enable prod mode after platform setup.`.
+- Webpack configuration with `@ngtools/webpack` currently does not work.
 
 ### Results
 
