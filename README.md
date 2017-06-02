@@ -49,12 +49,12 @@ Vendor sharing is a big reason why this example is wrote the way it is. You can 
 
 Below are the file sizes with the JiT compilation on the left and the AoT compilation on the right. We can see here that the application bundles increased in size slightly but the vendors bundle decreased in size greatly when using AoT compilation.
 
-![JiT vs AoT Build Sizes](https://raw.githubusercontent.com/patrickhousley/angular2-multi-project-test/master/results/JiT%20vs%20AoT%20Build%20Sizes.png)
+![JiT vs AoT Build Sizes](https://raw.githubusercontent.com/patrickhousley/angular2-multi-project-test/master/results/JIT%20vs%20AOT%20Build%20Sizes.png)
 
 The below images use [Webpack Visualizer](https://chrisbateman.github.io/webpack-visualizer/) (thanks @batemanchris) to visually show the largest difference in the build sizes. The first image, JiT compilation, contains the compiler with a size of 1.1M while the second image, AoT compilation, shows it is not included in our bundles.
 
-![JiT Build Visualization](https://raw.githubusercontent.com/patrickhousley/angular2-multi-project-test/master/results/JiT%20Build%20Visualization.png)
+![JiT Build Visualization](https://raw.githubusercontent.com/patrickhousley/angular2-multi-project-test/master/results/JIT%20Build%20Visualization.png)
 
-![JiT Build Visualization](https://raw.githubusercontent.com/patrickhousley/angular2-multi-project-test/master/results/AoT%20Build%20Visualization.png)
+![JiT Build Visualization](https://raw.githubusercontent.com/patrickhousley/angular2-multi-project-test/master/results/AOT%20Build%20Visualization.png)
 
 You will find the stats in the `results` directory. Download and have a look at them with the [Webpack Visualizer](https://chrisbateman.github.io/webpack-visualizer/) or [Webpack Analyzer](http://webpack.github.io/analyse/).
