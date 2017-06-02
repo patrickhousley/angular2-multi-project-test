@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import { SharedAngularComponentsModule } from '../shared/shared.module';
+import { AppComponent } from 'submodules/app1/app.component';
+import { SharedAngularComponentsModule } from 'submodules/shared/shared.module';
 
 @NgModule({
   imports: [
@@ -12,3 +12,6 @@ import { SharedAngularComponentsModule } from '../shared/shared.module';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+  console.log('PROD MODE MODULE')

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import { SharedAngularComponentsModule } from '../shared/shared.module';
+import { AppComponent } from 'submodules/app2/app.component';
+import { SharedAngularComponentsModule } from 'submodules/shared/shared.module';
 
 @NgModule({
   imports: [

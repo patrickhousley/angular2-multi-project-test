@@ -1,6 +1,6 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowser } from '@angular/platform-browser';
-import { AppModuleNgFactory } from './app.module.ngfactory';
+import { AppModuleNgFactory } from 'submodules/app2/app.module.ngfactory';
 
 try {
   enableProdMode();
